@@ -33,9 +33,9 @@ def command(*args):
     return (1, "Successful!") # return (status_code, text)
 ```
 
-Status Code  | Explanation                  | Example
------------- | ---------------------------- | -----------
-1            | Successful. Prints text.     | ``return (1, "Successful")``
-2            | Some problem about arguments.| ``return (2, "Too much argument.")``
-3            | File directory access error. | ``return (3, "File not found.")``
-
+Status Code  | Explanation                                                   | Example
+------------ | ------------------------------------------------------------- | -----------
+1            | Successful. Prints given text.                                | ``return (1, "Successful")``
+2            | Some problem about arguments. Prints given text.              | ``return (2, "Too much argument.")``
+3            | File directory access error. Prints given text.               | ``return (3, "File not found.")``
+4            | Successful. Don't prints any text. Should give a blank string.| ``return (4, "")``
