@@ -19,7 +19,7 @@ For Windows:
 python emrex_shell
 ```
 
-For more, please see documentation.
+For more, please see [Documentation](https://github.com/ramazanemreosmanoglu/emrex-shell/blob/main/DOCUMENTATION.md).
 
 ## Prerequisites
 
@@ -27,7 +27,8 @@ This project doesn't needs any package. Standart Python installation is enough f
 
 ## Contributing
 
-I'm open for pull requests, if you have any idea about this project, please make a pull request, or contact with me.
+Before contributing, see [Development Project](https://github.com/ramazanemreosmanoglu/emrex-shell/projects/1) to learn what we need. If you have another
+great idea, just make a pull request, or contact with me.
 
 ## License
 
