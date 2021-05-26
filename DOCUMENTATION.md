@@ -38,4 +38,4 @@ Status Code  | Explanation                                                   | E
 1            | Successful. Prints given text.                                | ``return (1, "Successful")``
 2            | Some problem about arguments. Prints given text.              | ``return (2, "Too much argument.")``
 3            | File directory access error. Prints given text.               | ``return (3, "File not found.")``
-4            | Successful. Don't prints any text. Should give a blank string.| ``return (4, "")``
+4            | Successful. Don't prints any text. Should take a blank string.| ``return (4, "")``
