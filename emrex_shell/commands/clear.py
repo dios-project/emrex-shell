@@ -5,9 +5,10 @@ import os
 COMMAND_NAME = "clear"
 DESCRIPTION = "Clears terminal."
 
-def command(*args):
+
+def command(args):
     if args:
-        return (2, "This command does not takes any argument.")
-    
+        return (1, "This command does not takes any argument.")
+
     os.system("cls" if os.name == "nt" else "clear")
-    return (4, "")
+    return (3, "")
