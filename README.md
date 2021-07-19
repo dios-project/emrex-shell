@@ -9,14 +9,14 @@ To start,
 For unix systems:
 
 ```bash
-chmod +x emrex_shell # Make it executable
-./emrex_shell # Then run
+chmod +x emxsh # For make it executable
+./emxsh        # and run
 ```
 
 For Windows:
 
 ```bash
-python emrex_shell
+python3 emxsh
 ```
 
 For more, please see [Documentation](https://github.com/ramazanemreosmanoglu/emrex-shell/blob/main/DOCUMENTATION.md).

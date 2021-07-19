@@ -16,26 +16,26 @@ command. Prefix:
 # File should to start with this prefix.
 
 COMMAND_NAME = "my_command" # Name of command for call
-DESCRIPTION = "Foo bar" # Description for help texts.
+DESCRIPTION = "Foo bar"     # Description for help texts.
 
-def command(*args):
+def command(args):
     ...
-    return (1, "Text") # Example return type. Commands shouldn't print anything.
+    return (0, "Text") # Example return type. Commands shouldn't print anything.
 ```
 
 ### Return type of command functions
 
-Typically, return values should look like this: 
+Typically, return values should look like this:
 
 ```python
-def command(*args):
+def command(args):
     ...
-    return (1, "Successful!") # return (status_code, text)
+    return (0, "Successful!") # return (exit_code, text)
 ```
 
-Status Code  | Explanation                                                   | Example
------------- | ------------------------------------------------------------- | -----------
-1            | Successful. Prints given text.                                | ``return (1, "Successful")``
-2            | Some problem about arguments. Prints given text.              | ``return (2, "Too much argument.")``
-3            | File directory access error. Prints given text.               | ``return (3, "File not found.")``
-4            | Successful. Don't prints any text. Should take a blank string.| ``return (4, "")``
+| Exit Code | Explanation                                                    | Example                              |
+| --------- | -------------------------------------------------------------- | ------------------------------------ |
+| 0         | Successful. Prints given text.                                 | ``return (0, "Successful")``         |
+| 1         | Some problem about arguments. Prints given text.               | ``return (1, "Too much argument.")`` |
+| 2         | File directory access error. Prints given text.                | ``return (2, "File not found.")``    |
+| 3         | Successful. Don't prints any text. Should take a blank string. | ``return (3, "")``                   |
