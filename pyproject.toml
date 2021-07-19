@@ -4,7 +4,7 @@ version = "0.8.0"
 description = "Simple Shell Simulator"
 authors = ["ramazanemreosmanoglu <ramazanemre@protonmail.com>"]
 contributors = ["Samet195 <No Email>"]
-license = "GPL v3.0"
+license = "GPL-3.0"
 
 [tool.poetry.dependencies]
 python = "^3.9"
