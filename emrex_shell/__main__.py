@@ -33,7 +33,7 @@ for path in PATH:
 
         with open(os.path.join(path, item), "r") as file:
             if file.readline() == COMMAND_PREFIX:
-                module_path = item.rstrip(".py")
+                module_path = item.rsplit(".py", 1)[0]
                 COMMANDS.append(__import__(module_path, fromlist=[""]))
 
             else:
