@@ -2,6 +2,7 @@
 
 """
 Core interpreter of emrex Shell.
+kerem3338 tarafından boş komut hatası çözüldü - satır 13-16 arası
 """
 
 # TODO: Add config for standard output.
@@ -9,7 +10,10 @@ Core interpreter of emrex Shell.
 
 def interpreter(cmd, commands):
     cmd_list = cmd.split()
-    command_name = cmd_list[0]
+    try:
+        command_name = cmd_list[0]
+    except IndexError:
+        command_name = ""
     args = cmd_list[1:]
 
     command_found = False
